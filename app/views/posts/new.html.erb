@@ -1,0 +1,10 @@
+<div class="container">
+<h1 class="d-flex justify-content-center">新しい投稿</h1>
+<div class="d-flex justify-content-center">
+<%= form_with model:@posts do |form|%>
+<div><%= form.label :title ,class:"mr-3"%><%= form.text_field:title%></div>
+<div><%= form.label :content%><%= form.text_area:content%></div>
+<div><%= form.submit "投稿",class:"link-button"%></div>
+<%end%>
+</div>
+</div>
